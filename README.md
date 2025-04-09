@@ -22,11 +22,13 @@ HTML / CSS / JS 사용 <br>
 - 이벤트 <br>
 다양한 이벤트를 통해 참여 유도 및 보상 제공
 
+<br><br><br>
+
 ## 향후 기능 제안 <br>
 댓글 및 공감 시스템 강화 <br>
 익명/친구끼리만 보기 설정 <br>
 감정 키워드 기반 추천 알고리즘
 
-<br><br><br>
+<br>
 
 [하루몽글](https://parkhanuri.github.io/HARU-MONGLE/)
