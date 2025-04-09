@@ -1,20 +1,9 @@
-* {
-    a {
-        color: black;
-    }
-}
-
-* {
-
-    a h2,
-    a h3,
-    a p {
-        margin: 0;
-        padding: 0;
-        font-family: 'GowunDodum-Regular';
-    }
-
-    /* a 태그 후 안에 중첩 할 수 X 오류 날수도 있음 */
+a h2,
+a h3,
+a p {
+    margin: 0;
+    padding: 0;
+    font-family: 'GowunDodum-Regular';
 }
 
 body,
@@ -30,6 +19,7 @@ h2 {
     text-decoration: none;
     font-style: normal;
     font-family: 'Cafe24SsurroundAir';
+    color: black;
 }
 
 header {
@@ -267,20 +257,22 @@ main {
                     margin-top: 20px;
                 }
             }
-        }
 
-        .btn {
-            background-color: #eee;
-            border: none;
-            border-radius: 5px;
-            font-size: 15px;
-            width: 90px;
-            height: 40px;
-        }
+            .btn {
+                background-color: #eee;
+                border: none;
+                border-radius: 5px;
+                font-size: 15px;
+                width: 90px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
 
-        .btn:hover {
-            cursor: pointer;
-            background-color: rgb(190, 190, 190);
+            .btn:hover {
+                background-color: rgb(190, 190, 190);
+            }
         }
     }
 
@@ -370,7 +362,6 @@ section {
 
 footer {
     background-color: #F9F2E4;
-    font-family: 'GowunDodum-Regular';
     margin-top: 30px;
     padding: 30px 0;
 
@@ -406,13 +397,15 @@ footer {
 @font-face {
     font-family: 'Cafe24SsurroundAir';
     src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+}
 
+@font-face {
     font-family: 'GowunDodum-Regular';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
 }
 
 /* 반응형 */
-@media (max-width: 1120px) {
+/* @media (max-width: 1120px) {
     .container {
         .carousel .carousel-wrap {
             height: auto;
@@ -423,7 +416,7 @@ footer {
     .carousel-box {
         flex-direction: column;
     }
-}
+} */
 
 
 @media(max-width:996px) {
@@ -444,10 +437,26 @@ footer {
     }
 }
 
-@media(max-width:870px) {
+/* @media(max-width:870px) {
     .header-inner {
         flex-direction: column;
         gap: 30px;
         align-items: start;
+    }
+} */
+
+@media (max-width: 768px) {
+    .header-inner,
+    .carousel-wrap,
+    main ul,
+    section .event-wrap {
+        flex-direction: column;
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    .carousel-box img {
+        width: 100%;
+        height: auto;
     }
 }
